@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sameer Singh — Editor / Filmmaker / Storyteller</title>
+<meta name="description" content="One man post production studio editing brand films, founder stories, fitness drops, music videos and more. Based in Karnal, India." />
+<meta property="og:title" content="Sameer Singh — Editor / Filmmaker" />
+<meta property="og:description" content="Cuts that feel something. Stories that stay." />
+<meta property="og:type" content="website" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✦</text></svg>" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300;9..144,400;9..144,700;9..144,900&family=JetBrains+Mono:wght@400;600&family=Instrument+Serif&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="progress" id="progress"></div>
+<div class="cursor" id="cursor"></div>
+
+<nav>
+  <div class="logo" id="navLogo"></div>
+  <ul>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#reels">Reels</a></li>
+    <li><a href="#shoot">Stills</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact">Book a call ↗</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <div class="ticker">
+    <div class="ticker-track" id="tickerTrack"></div>
+  </div>
+
+  <div class="hero-grid">
+    <h1 id="heroTitle"></h1>
+    <div class="hero-meta reveal d4">
+      <span class="badge" id="badge">Available for projects</span>
+      <p class="lede" id="lede"></p>
+      <div class="stats" id="stats"></div>
+    </div>
+  </div>
+
+  <div class="scroll-cue">
+    <span>Scroll</span>
+    <div class="line"></div>
+  </div>
+</section>
+
+<div class="niches">
+  <div class="niches-track" id="nichesTrack"></div>
+</div>
+
+<section class="work-pin" id="work">
+  <div class="work-sticky">
+    <div class="work-track" id="workTrack">
+      <div class="work-intro">
+        <span class="num">[ 01 / WORK ]</span>
+        <h2>Selected <em>cuts</em></h2>
+        <p>Scroll across to see them.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="reels" id="reels">
+  <div class="label-row">
+    <div>
+      <div class="num">[ 02 / SHORT FORM ]</div>
+      <h2>Reels that <em>stop</em><br>the scroll.</h2>
+    </div>
+    <p class="sub">Vertical edits built for retention. Hooks under three seconds, beats on frame, captions that actually breathe.</p>
+  </div>
+  <div class="reel-strip" id="reelStrip"></div>
+</section>
+
+<!-- I SHOOT TOO — photography section -->
+<section class="shoot" id="shoot">
+  <div class="shoot-header">
+    <div class="num">[ 03 / STILLS ]</div>
+    <h2 id="shootTitle"></h2>
+    <p class="sub" id="shootIntro"></p>
+  </div>
+  <div class="shoot-mosaic" id="shootMosaic"></div>
+</section>
+
+<section class="services" id="services">
+  <div class="section-label">
+    <span class="num">[ 04 / SERVICES ]</span>
+    <h2>What I <em>do</em></h2>
+  </div>
+  <div class="svc-grid" id="svcGrid"></div>
+</section>
+
+<section class="quote">
+  <p class="big" id="quoteEl"></p>
+  <p class="attr" id="quoteAttr"></p>
+</section>
+
+<section class="contact" id="contact">
+  <div class="contact-inner">
+    <h2 id="contactTitle"></h2>
+    <div class="contact-side" id="contactSide"></div>
+  </div>
+</section>
+
+<footer>
+  <span id="footL"></span>
+  <span id="footR"></span>
+</footer>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
