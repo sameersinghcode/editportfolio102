@@ -184,8 +184,12 @@ function onScroll(){
     const end = start + workPin.offsetHeight - window.innerHeight;
     if(sy >= start && sy <= end){
       const p = (sy-start)/(end-start);
-      const tw = wTrack.scrollWidth - window.innerWidth;
-      wTrack.style.transform = `translateX(${-p*tw}px)`;
+      const lastCard = wTrack.querySelector('.wcard:last-child');
+      const trackPadRight = parseFloat(getComputedStyle(wTrack).paddingRight) || 0;
+      const tw = lastCard
+        ? (lastCard.offsetLeft + lastCard.offsetWidth + trackPadRight) - window.innerWidth
+        : wTrack.scrollWidth - window.innerWidth;
+      wTrack.style.transform = `translateX(${-p*Math.max(0, tw)}px)`;
     } else if(sy < start){
       wTrack.style.transform = `translateX(0)`;
     }
