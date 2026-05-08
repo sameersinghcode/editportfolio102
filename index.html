@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sameer Singh — Director / Cinematographer / Editor</title>
+<meta name="description" content="One man creative studio. Direction, cinematography, editing, post production, marketing. Based in Karnal, India." />
+<meta property="og:title" content="Sameer Singh — Director / Cinematographer / Editor" />
+<meta property="og:description" content="I shoot. I edit. I tell the story. End to end." />
+<meta property="og:type" content="website" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✦</text></svg>" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300;9..144,400;9..144,700;9..144,900&family=JetBrains+Mono:wght@400;600&family=Instrument+Serif&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="progress" id="progress"></div>
+<div class="cursor" id="cursor"></div>
+
+<nav>
+  <div class="logo" id="navLogo"></div>
+  <ul>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#reels">Reels</a></li>
+    <li><a href="#shoot">Stills</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact">Book a call ↗</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <div class="ticker">
+    <div class="ticker-track" id="tickerTrack"></div>
+  </div>
+
+  <div class="hero-grid">
+    <h1 id="heroTitle"></h1>
+
+    <div class="hero-portrait" id="heroPortrait">
+      <!-- Stylized SVG portrait. Replace with your transparent PNG anytime by swapping the inner content with <img src="your-photo.png"/> -->
+      <svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs>
+          <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#ff4d2e"/>
+            <stop offset="100%" stop-color="#7c2d92"/>
+          </linearGradient>
+          <pattern id="dots" x="0" y="0" width="14" height="14" patternUnits="userSpaceOnUse">
+            <circle cx="2" cy="2" r="1.4" fill="#0a0a0a" opacity=".25"/>
+          </pattern>
+          <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2"/><feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.4 0"/></filter>
+        </defs>
+
+        <!-- background blob -->
+        <path d="M 60 120 Q 40 50 130 40 Q 240 25 320 80 Q 380 130 360 230 Q 350 340 280 410 Q 200 470 120 430 Q 40 380 50 280 Q 30 190 60 120 Z"
+              fill="url(#bgGrad)"/>
+        <path d="M 60 120 Q 40 50 130 40 Q 240 25 320 80 Q 380 130 360 230 Q 350 340 280 410 Q 200 470 120 430 Q 40 380 50 280 Q 30 190 60 120 Z"
+              fill="url(#dots)"/>
+
+        <!-- body / shoulders -->
+        <path d="M 80 480 Q 80 360 140 320 L 260 320 Q 320 360 320 480 Z" fill="#0a0a0a"/>
+
+        <!-- neck -->
+        <rect x="180" y="280" width="40" height="50" fill="#d4a574"/>
+
+        <!-- face -->
+        <ellipse cx="200" cy="220" rx="78" ry="92" fill="#d4a574"/>
+
+        <!-- hair -->
+        <path d="M 122 200 Q 115 130 200 110 Q 290 125 280 195 Q 290 165 270 145 Q 240 100 200 105 Q 145 110 130 160 Q 118 185 122 200 Z" fill="#1a1a1a"/>
+        <path d="M 130 195 Q 145 175 175 175 L 195 180 Q 175 195 145 210 Q 132 208 130 195 Z" fill="#0a0a0a"/>
+
+        <!-- ears -->
+        <ellipse cx="124" cy="225" rx="8" ry="14" fill="#c89968"/>
+        <ellipse cx="276" cy="225" rx="8" ry="14" fill="#c89968"/>
+
+        <!-- eyebrows -->
+        <path d="M 155 195 Q 170 188 185 194" stroke="#0a0a0a" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+        <path d="M 215 194 Q 230 188 245 195" stroke="#0a0a0a" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+
+        <!-- eyes -->
+        <ellipse cx="170" cy="218" rx="6" ry="4" fill="#0a0a0a"/>
+        <ellipse cx="230" cy="218" rx="6" ry="4" fill="#0a0a0a"/>
+
+        <!-- nose -->
+        <path d="M 200 228 L 196 258 Q 200 264 204 258 Z" fill="none" stroke="#a8845a" stroke-width="2" stroke-linecap="round"/>
+
+        <!-- subtle smile -->
+        <path d="M 182 278 Q 200 286 218 278" stroke="#0a0a0a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+        <!-- camera (the playful detail — Sony A6700 vibe) -->
+        <g transform="translate(255, 340)">
+          <rect x="0" y="0" width="90" height="55" rx="6" fill="#1a1a1a" stroke="#d4ff3a" stroke-width="2"/>
+          <circle cx="45" cy="28" r="20" fill="#0a0a0a" stroke="#d4ff3a" stroke-width="2"/>
+          <circle cx="45" cy="28" r="13" fill="#1a1a1a"/>
+          <circle cx="45" cy="28" r="6" fill="#d4ff3a"/>
+          <rect x="60" y="-6" width="20" height="10" rx="2" fill="#1a1a1a"/>
+          <circle cx="78" cy="8" r="2.5" fill="#ff4d2e"/>
+        </g>
+
+        <!-- floating creative tags -->
+        <g class="float-1">
+          <rect x="20" y="60" width="100" height="28" rx="14" fill="#d4ff3a" stroke="#0a0a0a" stroke-width="2"/>
+          <text x="70" y="79" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" font-weight="600" fill="#0a0a0a">DIRECTOR</text>
+        </g>
+        <g class="float-2">
+          <rect x="290" y="100" width="100" height="28" rx="14" fill="#0a0a0a"/>
+          <text x="340" y="119" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" font-weight="600" fill="#d4ff3a">EDITOR ✦</text>
+        </g>
+        <g class="float-3">
+          <rect x="10" y="380" width="110" height="28" rx="14" fill="#ffb800" stroke="#0a0a0a" stroke-width="2"/>
+          <text x="65" y="399" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" font-weight="600" fill="#0a0a0a">CINEMATOGRAPHER</text>
+        </g>
+
+        <!-- film strip decoration -->
+        <g transform="translate(0, 260) rotate(-12)" opacity=".9">
+          <rect x="-30" y="0" width="60" height="22" fill="#0a0a0a"/>
+          <rect x="-26" y="3" width="6" height="6" fill="#d4ff3a"/>
+          <rect x="-16" y="3" width="6" height="6" fill="#d4ff3a"/>
+          <rect x="-6" y="3" width="6" height="6" fill="#d4ff3a"/>
+          <rect x="4" y="3" width="6" height="6" fill="#d4ff3a"/>
+          <rect x="14" y="3" width="6" height="6" fill="#d4ff3a"/>
+          <rect x="24" y="3" width="6" height="6" fill="#d4ff3a"/>
+        </g>
+
+        <!-- signature scrawl -->
+        <text x="200" y="475" text-anchor="middle" font-family="Instrument Serif, serif" font-style="italic" font-size="22" fill="#f4ede2">— Sameer ✦</text>
+      </svg>
+
+      <!-- decorative orbiting badge -->
+      <div class="orbit-badge">
+        <svg viewBox="0 0 200 200">
+          <defs><path id="circ" d="M 100,100 m -75,0 a 75,75 0 1,1 150,0 a 75,75 0 1,1 -150,0"/></defs>
+          <text font-family="JetBrains Mono, monospace" font-size="13" font-weight="600" letter-spacing="3" fill="#0a0a0a">
+            <textPath href="#circ">SHOOT · EDIT · POST · MARKET · SHOOT · EDIT · POST · MARKET · </textPath>
+          </text>
+        </svg>
+        <div class="orbit-center">✦</div>
+      </div>
+    </div>
+
+    <div class="hero-meta reveal d4">
+      <span class="badge" id="badge">Available for projects</span>
+      <p class="lede" id="lede"></p>
+      <div class="stats" id="stats"></div>
+    </div>
+  </div>
+
+  <div class="scroll-cue">
+    <span>Scroll</span>
+    <div class="line"></div>
+  </div>
+</section>
+
+<div class="niches">
+  <div class="niches-track" id="nichesTrack"></div>
+</div>
+
+<section class="work" id="work">
+  <div class="work-intro">
+    <span class="num">[ 01 / WORK ]</span>
+    <h2>Selected <em>cuts</em></h2>
+    <p>Films, reels and stories I have edited across brands, music, web3 and travel.</p>
+  </div>
+  <div class="work-grid" id="workGrid"></div>
+</section>
+
+<section class="reels" id="reels">
+  <div class="label-row">
+    <div>
+      <div class="num">[ 02 / SHORT FORM ]</div>
+      <h2>Reels that <em>stop</em><br>the scroll.</h2>
+    </div>
+    <p class="sub">Vertical edits built for retention. Hooks under three seconds, beats on frame, captions that actually breathe.</p>
+  </div>
+  <div class="reel-strip" id="reelStrip"></div>
+</section>
+
+<!-- I SHOOT TOO — photography section -->
+<section class="shoot" id="shoot">
+  <div class="shoot-header">
+    <div class="num">[ 03 / STILLS ]</div>
+    <h2 id="shootTitle"></h2>
+    <p class="sub" id="shootIntro"></p>
+  </div>
+  <div class="shoot-mosaic" id="shootMosaic"></div>
+</section>
+
+<section class="services" id="services">
+  <div class="section-label">
+    <span class="num">[ 04 / SERVICES ]</span>
+    <h2>What I <em>do</em></h2>
+  </div>
+  <div class="svc-grid" id="svcGrid"></div>
+</section>
+
+<section class="quote">
+  <p class="big" id="quoteEl"></p>
+  <p class="attr" id="quoteAttr"></p>
+</section>
+
+<section class="contact" id="contact">
+  <div class="contact-inner">
+    <h2 id="contactTitle"></h2>
+    <div class="contact-side" id="contactSide"></div>
+  </div>
+</section>
+
+<footer>
+  <span id="footL"></span>
+  <span id="footR"></span>
+</footer>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
