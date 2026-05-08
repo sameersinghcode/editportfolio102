@@ -10,19 +10,24 @@ window.SITE = {
 
   // ---------- BASIC INFO ----------
   name: "SAMEER✦SINGH",
-  role: "Editor / Filmmaker / Storyteller",
+  role: "Director / Cinematographer / Editor",
   location: "Karnal, India",
   status: "Booking Q3 / Q4 2026",
   available: true,   // shows green dot if true
 
   // ---------- HERO (top of the page) ----------
+  // NOTE on the portrait illustration:
+  // The stylized SVG portrait sits inside index.html (search "hero-portrait").
+  // To swap with your real transparent PNG later, replace the entire <svg>...</svg>
+  // block with: <img src="me.png" alt="Sameer" />
+  // Upload your PNG to the repo root and that's it.
   hero: {
-    line1: "Cuts that",
-    line2: "feel something.",       // this one shows in italic red
-    line3: "Stories that stay.",
-    intro: "I'm Sameer. A one man post production studio editing brand films, founder stories, fitness drops, music videos, crypto launches and everything that needs a soul.",
+    line1: "I shoot. I edit.",
+    line2: "I tell the story.",       // this one shows in italic red
+    line3: "End to end.",
+    intro: "I'm Sameer. A one man creative studio doing everything from camera to colour, script to social. Brand films, founder stories, music videos, travel docs, fitness, web3 and the marketing that carries them.",
     stats: [
-      { number: 8,   label: "Years editing" },
+      { number: 8,   label: "Years in craft" },
       { number: 240, label: "Projects shipped" },
       { number: 17,  label: "Countries reached" }
     ]
@@ -30,14 +35,14 @@ window.SITE = {
 
   // ---------- NICHE MARQUEE (the rotating words) ----------
   niches: [
-    "BRAND FILMS",
-    "music videos",
-    "FITNESS REELS",
-    "founder stories",
-    "CRYPTO + WEB3",
-    "travel docs",
-    "EVENT AFTERMOVIES",
-    "podcast cuts"
+    "DIRECTION",
+    "cinematography",
+    "EDITING",
+    "colour grading",
+    "MOTION DESIGN",
+    "brand strategy",
+    "SOCIAL CONTENT",
+    "marketing"
   ],
 
   // ---------- SELECTED WORK (horizontal scroll cards) ----------
@@ -84,14 +89,14 @@ window.SITE = {
 
   // ---------- SERVICES ----------
   services: [
-    { title: "Brand films",        italic: "films",         desc: "Founder stories, product launches, identity pieces. Script to delivery." },
-    { title: "Reels and shorts",   italic: "+",             desc: "High retention vertical edits for fitness, food, lifestyle, finance brands." },
-    { title: "Aftermovies",        italic: "movies",        desc: "Events, summits, festivals. Energy, pacing, sound design that hits." },
-    { title: "Music videos",       italic: "videos",        desc: "Performance, narrative, lyric. Colour grading included as standard." },
-    { title: "Podcast cuts",       italic: "cuts",          desc: "Long form to short form pipelines, captions, B-roll, hook editing." },
-    { title: "Colour grading",     italic: "grading",       desc: "Cinematic LUTs, skin tones, mood, finishing." },
-    { title: "Motion design",      italic: "design",        desc: "Title cards, lower thirds, kinetic type, brand bumpers." },
-    { title: "Creative direction", italic: "direction",     desc: "Mood boards, treatments, shot lists. Building the film before it shoots." }
+    { title: "Direction",          italic: "Direction",       desc: "Concept, treatment, shot lists. Shaping the film before a single frame is shot." },
+    { title: "Cinematography",     italic: "Cinematography",  desc: "Camera, lighting, composition. Sony A6700 in hand, gimbal ready." },
+    { title: "Brand films",        italic: "films",           desc: "Founder stories, product launches, identity pieces. Script to delivery." },
+    { title: "Editing",            italic: "Editing",         desc: "DaVinci Resolve. Pacing, rhythm, story structure. Where the soul shows up." },
+    { title: "Colour grading",     italic: "grading",         desc: "Cinematic LUTs, skin tones, mood, finishing. Matching the feeling." },
+    { title: "Motion design",      italic: "design",          desc: "Title cards, lower thirds, kinetic type, brand bumpers." },
+    { title: "Reels and shorts",   italic: "+",               desc: "High retention vertical edits for fitness, food, lifestyle, finance brands." },
+    { title: "Marketing",          italic: "Marketing",       desc: "Launch strategy, paid social, content calendars. Films that actually get seen." }
   ],
 
   // ---------- BIG QUOTE ----------
